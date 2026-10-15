@@ -36,6 +36,8 @@ def process_student_records(file_path):
 
 if __name__ == "__main__":
     results = process_student_records('students.csv')
-    print("\nProcessed Student Grades:")
+    print("\n================ ACADEMIC REPORT ================")
+    print(f"Total Students Processed: {len(results)}")
     for student in results:
-        print(f"{student['Name']}: {student['Grade']}")
+        print(f"Report Entry -> {student['Name']}: {student['Grade']}")
+    print("=================================================")
